@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": "$10/month",
+    "description": "Suitable for beginners who need basic features.",
+    "features": [
+      "1 User Access",
+      "Basic Support",
+      "5GB Storage",
+      "Community Access"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": "$25/month",
+    "description": "Perfect for small teams who need more flexibility.",
+    "features": [
+      "5 User Access",
+      "Priority Support",
+      "50GB Storage",
+      "Advanced Analytics"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": "$50/month",
+    "description": "Best for large teams and businesses needing full features.",
+    "features": [
+      "Unlimited Users",
+      "24/7 Premium Support",
+      "200GB Storage",
+      "Custom Integrations"
+    ]
+  }
+]
