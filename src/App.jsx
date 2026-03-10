@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <Header></Header>
+      <div className="my-10">
+
       <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </>
   );
