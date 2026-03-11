@@ -13,9 +13,9 @@ export default function PricingCard({ pricing }) {
         </div>
         <ul className="mt-6 flex flex-col gap-2 text-xs">
           {features?.map((feat, index) => (
-            <li key={index + 1}>
+            <li className="flex" key={index + 1}>
               <IoMdCheckmark />
-              <span>{feat}</span>
+              <span className="mx-2">{feat}</span>
             </li>
           ))}
         </ul>

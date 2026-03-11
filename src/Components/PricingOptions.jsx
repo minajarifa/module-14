@@ -6,10 +6,10 @@ export default function PricingOptions({ priceData }) {
   return (
     <div>
       <h2>Get our membership</h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3">
-        {
-   pricingData.map(pricing=><PricingCard key={pricing?.id} pricing={pricing}></PricingCard>)
-        }
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {pricingData.map((pricing) => (
+          <PricingCard key={pricing?.id} pricing={pricing}></PricingCard>
+        ))}
       </div>
     </div>
   );
