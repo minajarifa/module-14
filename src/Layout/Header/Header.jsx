@@ -6,8 +6,8 @@ export default function Header() {
       <Link className="m-3" to={`/`}>
         Home
       </Link>
-      <Link className="m-3">
-        Home
+      <Link className="m-3" to={`/SingleForm`}>
+        Single Form
       </Link>
       <Link className="m-3">
         Home
