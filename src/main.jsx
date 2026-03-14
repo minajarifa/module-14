@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home.jsx';
 import SingleForm from './Pages/SingleForm/SingleForm.jsx';
 import Uncrontrolled from './Pages/Uncontrolled/Uncrontrolled.jsx';
 import ProductManegment from './Pages/ProductManagment/ProductManegment.jsx';
+import House from './Pages/House/House.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       children: [
       {
         path: "/",
-        element: <Home />,
+        element: <House />,
       },
       {
         path: "/SingleForm",

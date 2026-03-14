@@ -4,16 +4,7 @@ export default function Header() {
   const navLinks = (
     <>
       <NavLink className={`m-3  `}to={`/`}>
-        Home
-      </NavLink>
-      <NavLink className="m-3" to={`/SingleForm`}>
-        Single Form
-      </NavLink>
-      <NavLink className="m-3" to={`Uncrontrolled`}>
-        Uncrontrolled
-      </NavLink>
-      <NavLink className="m-3" to={`ProductManegment`}>
-        Product Manegment
+        House
       </NavLink>
     </>
   );
@@ -45,7 +36,7 @@ export default function Header() {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Book Vide</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
