@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home.jsx';
 import SingleForm from './Pages/SingleForm/SingleForm.jsx';
+import Uncrontrolled from './Pages/Uncontrolled/Uncrontrolled.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/SingleForm",
         Component: SingleForm,
+      },
+      {
+        path: "/Uncrontrolled",
+        Component: Uncrontrolled,
       },
     ],
   },

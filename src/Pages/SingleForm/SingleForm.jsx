@@ -8,6 +8,7 @@ const password =  form.password.value;
     console.log(userInfo)
   };
   return (
+    <>
     <form
       onSubmit={handleFormSubmit}
       className="hero bg-base-200 min-h-screen "
@@ -29,5 +30,6 @@ const password =  form.password.value;
         </div>
       </div>
     </form>
+    </>
   );
 }

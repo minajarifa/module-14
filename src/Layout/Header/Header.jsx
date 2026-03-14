@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const navLinks = (
     <>
-      <Link className="m-3" to={`/`}>
+      <NavLink className={`m-3  `}to={`/`}>
         Home
-      </Link>
-      <Link className="m-3" to={`/SingleForm`}>
+      </NavLink>
+      <NavLink className="m-3" to={`/SingleForm`}>
         Single Form
-      </Link>
-      <Link className="m-3">
-        Home
-      </Link>
+      </NavLink>
+      <NavLink className="m-3" to={`Uncrontrolled`}>
+        Uncrontrolled
+      </NavLink>
     </>
   );
   return (
