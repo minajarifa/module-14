@@ -12,6 +12,9 @@ export default function Header() {
       <NavLink className="m-3" to={`Uncrontrolled`}>
         Uncrontrolled
       </NavLink>
+      <NavLink className="m-3" to={`ProductManegment`}>
+        Product Manegment
+      </NavLink>
     </>
   );
   return (

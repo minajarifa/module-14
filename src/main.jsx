@@ -9,6 +9,7 @@ import {
 import Home from './Pages/Home/Home.jsx';
 import SingleForm from './Pages/SingleForm/SingleForm.jsx';
 import Uncrontrolled from './Pages/Uncontrolled/Uncrontrolled.jsx';
+import ProductManegment from './Pages/ProductManagment/ProductManegment.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/Uncrontrolled",
         Component: Uncrontrolled,
+      },
+      {
+       path: "/ProductManegment",
+        Component: ProductManegment,
       },
     ],
   },
