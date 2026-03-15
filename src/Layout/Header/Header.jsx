@@ -6,6 +6,9 @@ export default function Header() {
       <NavLink className={`m-3  `} to={`/`}>
         <button className="btn btn-outline btn-success">House</button>
       </NavLink>
+      <NavLink className={`m-3  `} to={`/Listed-Books`}>
+        <button className="btn btn-outline btn-success">Listed-Books</button>
+      </NavLink>
     </>
   );
   return (
@@ -42,12 +45,18 @@ export default function Header() {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end ">
-          <button className="btn btn-active btn-success bg-[#23BE0A] text-white m-5">
+          <Link
+            to={`/Login`}
+            className="btn btn-active btn-success bg-[#23BE0A] text-white m-5"
+          >
             Sign In
-          </button>
-          <button className="btn btn-active btn-success bg-[#59C6D2] text-white m-5">
+          </Link>
+          <Link
+            to={`/Register`}
+            className="btn btn-active btn-success bg-[#59C6D2] text-white m-5"
+          >
             Sign Up
-          </button>
+          </Link>
         </div>
       </div>
     </div>

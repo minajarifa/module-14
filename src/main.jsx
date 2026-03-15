@@ -12,6 +12,9 @@ import Uncrontrolled from './Pages/Uncontrolled/Uncrontrolled.jsx';
 import ProductManegment from './Pages/ProductManagment/ProductManegment.jsx';
 import House from './Pages/House/House.jsx';
 import BookDetails from './Pages/BookDetails/BookDetails.jsx';
+import ListedBooks from './Pages/ListedBooks/ListedBooks.jsx';
+import Login from './Pages/Login/Login.jsx';
+import Register from './Pages/Register/Register.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <House />,
+      },
+      {
+        path: "/Listed-Books",
+        Component: ListedBooks,
+         loader: ()=>fetch(`/booksData.json`)
       },
       {
         path: "/BookDetails/:id",
@@ -40,6 +48,14 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:'/Login',
+    Component:Login
+  },
+  {
+    path:'/Register',
+    Component:Register
+  }
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

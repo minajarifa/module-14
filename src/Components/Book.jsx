@@ -1,6 +1,6 @@
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router";
-export default function Book({ bookData }) {
+export default function Book({ bookData ,handleSort}) {
   const {
     image,
     author,
@@ -11,8 +11,10 @@ export default function Book({ bookData }) {
     rating,
     // review,
     tags,
+    // totalPages
   } = bookData;
   console.log(bookData);
+  // handleSort(bookName)
   return (
     <>
       <Link to={`/BookDetails/${bookId}`}>
