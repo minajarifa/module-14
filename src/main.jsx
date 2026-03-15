@@ -11,6 +11,7 @@ import SingleForm from './Pages/SingleForm/SingleForm.jsx';
 import Uncrontrolled from './Pages/Uncontrolled/Uncrontrolled.jsx';
 import ProductManegment from './Pages/ProductManagment/ProductManegment.jsx';
 import House from './Pages/House/House.jsx';
+import BookDetails from './Pages/BookDetails/BookDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <House />,
+      },
+      {
+        path: "/BookDetails/:id",
+        Component: BookDetails,
+        loader: ()=>fetch(`/booksData.json`)
       },
       {
         path: "/SingleForm",

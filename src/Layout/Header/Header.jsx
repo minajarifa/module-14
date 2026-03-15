@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   const navLinks = (
     <>
-      <NavLink className={`m-3  `}to={`/`}>
-        House
+      <NavLink className={`m-3  `} to={`/`}>
+        <button className="btn btn-outline btn-success">House</button>
       </NavLink>
     </>
   );
@@ -41,8 +41,13 @@ export default function Header() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end ">
+          <button className="btn btn-active btn-success bg-[#23BE0A] text-white m-5">
+            Sign In
+          </button>
+          <button className="btn btn-active btn-success bg-[#59C6D2] text-white m-5">
+            Sign Up
+          </button>
         </div>
       </div>
     </div>
