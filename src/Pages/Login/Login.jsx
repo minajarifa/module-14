@@ -31,9 +31,6 @@ export default function Login() {
         console.log(error);
       });
   };
-  // 
-  // 
-
   const handleGithubLogin = () => {
     signInWithPopup(auth, providerGithub)
       .then((result) => {

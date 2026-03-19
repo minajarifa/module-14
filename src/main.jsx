@@ -15,6 +15,7 @@ import BookDetails from './Pages/BookDetails/BookDetails.jsx';
 import ListedBooks from './Pages/ListedBooks/ListedBooks.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Register from './Pages/Register/Register.jsx';
+import Rechart from './Pages/Rechart/Rechart.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <House />,
+      },
+      {
+        path: "/Rechart",
+        Component:Rechart,
       },
       {
         path: "/Listed-Books",

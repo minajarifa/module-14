@@ -9,6 +9,9 @@ export default function Header() {
       <NavLink className={`m-3  `} to={`/Listed-Books`}>
         <button className="btn btn-outline btn-success">Listed-Books</button>
       </NavLink>
+      <NavLink className={`m-3  `} to={`/Rechart`}>
+        <button className="btn btn-outline btn-success">Chart</button>
+      </NavLink>
     </>
   );
   return (
